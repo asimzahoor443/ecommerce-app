@@ -37,7 +37,12 @@ const Hero = () => {
           alt="Hero Img"
           width={600}
         />
-        <div className={css.cart2}>
+        <motion.div
+          transition={transition}
+          initial={{ right: '4%' }}
+          whileInView={{ right: '2%' }}
+          className={css.cart2}
+        >
           <RiShoppingBagFill />
           <div className={css.signup}>
             <span>Best Signup offers</span>
@@ -45,7 +50,7 @@ const Hero = () => {
               <BsArrowRight />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* Right Side */}
       <div className={css.h_sides}>
